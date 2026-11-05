@@ -1,0 +1,2 @@
+[console_scripts]
+cyberbrain = cyberbrain:main
