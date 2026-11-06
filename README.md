@@ -60,7 +60,7 @@ Python 3.10+ with pip.
 Clone the repository:
 
 Bash
-git clone [https://github.com/safinulsafin0-byte/CYBERBRAIN.git](https://github.com/safinulsafin0-byte/CYBERBRAIN.git)
+git clone https://github.com/safinulsafin0-byte/CYBERBRAIN.git
 Navigate into the directory:
 
 Bash
@@ -69,20 +69,21 @@ cd CYBERBRAIN
 
 Bash
 python -m venv venv
-Activate the virtual environment:
-
-Linux / macOS:
+Activate the virtual environment (Linux / macOS):
 
 Bash
 source venv/bin/activate
-Windows:
+Activate the virtual environment (Windows PowerShell):
 
 PowerShell
 venv\Scripts\activate
-Install dependencies and the CLI package:
+Install dependencies:
 
 Bash
 pip install -r requirements.txt
+Install the CYBERBRAIN CLI package:
+
+Bash
 pip install .
 3. Running CYBERBRAIN
 Option A: Interactive Terminal Shell
@@ -90,18 +91,18 @@ Launch the interactive shell:
 
 Bash
 cyberbrain
-Inside the shell, simply type your prompt. The engine automatically selects the right expert phase:
+Inside the shell, simply type your query. The engine automatically selects the right expert phase:
 
 Plaintext
 cyberbrain> Write a C++20 function that finds the shortest path in a weighted graph
 [✓ READY] Phase 1: Algo & Core Logic is active.
-
+Plaintext
 cyberbrain> Explain how a use-after-free happens and how to prevent it
 [✓ READY] Phase 2: Systems & Memory is active.
-
+Plaintext
 cyberbrain> Write a raw TCP SYN packet sender using sockets in C++
 [✓ READY] Phase 3: Network & Protocols is active.
-
+Plaintext
 cyberbrain> Write a YARA rule that flags a packed PE with suspicious section names
 [✓ READY] Phase 7: Active Defense & Threat Intel is active.
 In-Shell Phase Control Commands
@@ -142,8 +143,6 @@ Exit the shell:
 Plaintext
 exit
 Option B: Single-Command Mode
-Run single queries directly from your system terminal:
-
 Phase 01 (Modern C++ & Algorithms):
 
 Bash
